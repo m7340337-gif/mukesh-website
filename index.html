@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mukesh's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+<img src="mukesh.jpg.jpeg" alt="Mukesh" width="180">
+    <h1 id="home">Welcome to Mukesh's Website!</h1>
+
+    <p id="about">Hello! My name is Mukesh.</p>
+
+    <p>Welcome to my personal website.</p>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <p id="message"></p>
+<h2 id="contact">Contact Me</h2>
+<p>Thanks for visiting my website!</p>
+<h2>Send Me a Message</h2>
+
+<form onsubmit="sendMessage(event)">
+
+    <input type="text" id="name"
+    placeholder="Your Name" required>
+
+    <input type="email" id="email"
+    placeholder="Your Email" required>
+
+    <textarea id="userMessage"
+    placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+
+</form>
+
+<p id="formStatus"></p>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
